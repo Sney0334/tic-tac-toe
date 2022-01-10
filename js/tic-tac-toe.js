@@ -103,7 +103,6 @@ newGameButton.addEventListener('click', ()=>{
 cells.forEach((c, i) => {
 
     c.addEventListener('click', ()=>{
-        console.log("clicked cell")
         if(!cellValues[i]){
             cellValues[i] = xIsNext ? user.x : user.o;
         xIsNext = !xIsNext;
